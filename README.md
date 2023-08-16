@@ -1,4 +1,4 @@
-# E-Commerce Store with NodeJS
+# Backend del comandero
 
 This is an Express service that provides authorization functionality and includes separate folders for users and products.
 It also uses Sequelize ORM with SQLite as the database, along with the JSON Web Token (JWT) and AJV libraries.
@@ -29,8 +29,8 @@ Before running the application, make sure you have the following installed:
 2. NPM (v9)
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/arvindkalra08/e-commerce`
-2. Navigate to the project directory: `cd e-commerce-service`
+1. Clone the repository: `git clone https://github.com/teparuiz/backend`
+2. Navigate to the project directory: `cd backend`
 3. Install the dependencies: `npm install`
 
 ## Usage
