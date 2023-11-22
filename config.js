@@ -9,6 +9,10 @@ module.exports = {
   productPriceUnits: {
     DOLLAR: 'dollar',
     EURO: 'euro',
-    INR: 'inr'
+    INR: 'inr',
+    MXN: 'mxn',
+  },
+  dailyCashCuts: {
+
   }
 }
