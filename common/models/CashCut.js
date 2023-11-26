@@ -18,7 +18,7 @@ const CashCutModel = {
       allowNull: false,  
     },
     date: {
-        type: DataTypes.STRING,
+        type: DataTypes.DATE,
         allowNull: false,
     },
     user: {
@@ -30,7 +30,7 @@ const CashCutModel = {
         
     },
      sales: {
-        type: DataTypes.JSON,
+        type: DataTypes.INTEGER,
         allowNull: false,
      },
      cashBox: {
@@ -48,8 +48,8 @@ module.exports = {
         this.model = sequelize.define('cashcut', CashCutModel)
     },
 
-    createCashCut: (user) => {
-        return this.model.create(user);
+    createCashCut: (cashcut) => {
+        return this.model.create(cashcut);
     },
 
     findCashCut: (query) => {
