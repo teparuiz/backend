@@ -1,4 +1,4 @@
-const CashCutModel = require("../../../common/models/CashCut");
+const CashCutModel = require("../../common/models/CashCut");
 
 module.exports = {
   getAllCashCut: (req, res) => {

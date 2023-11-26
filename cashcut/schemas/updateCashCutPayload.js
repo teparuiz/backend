@@ -1,17 +1,29 @@
 module.exports = {
   type: "object",
   properties: {
+    id: {
+      type: "string",
+    },
     name: {
       type: "string",
     },
-    description: {
+    comments: {
       type: "string",
     },
-    image: {
+    date: {
       type: "string",
     },
-    price: {
-      type: "number",
+    user: {
+      type: "string",
+    },
+    dailyExpenses: {
+      type: "integer",
+    },
+    sales: {
+      type: "integer",
+    },
+    cashBox: {
+      type: "integer",
     },
   },
   additionalProperties: false,
