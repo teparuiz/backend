@@ -79,7 +79,11 @@ module.exports = {
         id: cashCutId,
       },
       payload
-    )
+    ).then(() => {
+      return CashCutModel.findCashCut({
+        id: cashCutId
+      })
+    })
       .then((cashCut) => {
         return res.status(200).json({
           status: true,
