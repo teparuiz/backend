@@ -23,6 +23,5 @@ module.exports = {
       type: "integer",
     },
   },
-  required: ["name", "date", "user", "sales", "cashBox"],
   additionalProperties: false,
 };
