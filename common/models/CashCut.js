@@ -17,8 +17,9 @@ const CashCutModel = {
     allowNull: false,
   },
   date: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: false,
+
   },
   user: {
     type: DataTypes.STRING,

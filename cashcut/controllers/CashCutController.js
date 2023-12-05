@@ -1,4 +1,5 @@
 const CashCutModel = require("../../common/models/CashCut");
+const { v4: uuidv4} = require('uuid');
 
 module.exports = {
   getAllCashCut: (req, res) => {
@@ -79,11 +80,12 @@ module.exports = {
         id: cashCutId,
       },
       payload
-    ).then(() => {
-      return CashCutModel.findCashCut({
-        id: cashCutId
+    )
+      .then(() => {
+        return CashCutModel.findCashCut({
+          id: cashCutId,
+        });
       })
-    })
       .then((cashCut) => {
         return res.status(200).json({
           status: true,
